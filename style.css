@@ -1,13 +1,21 @@
 body {
   margin: 0px;
+  overflow: hidden;
+  background: radial-gradient(closest-side, rgb(69, 196, 255), lightblue);
+}
+
+div {
+  position: relative;
+  margin: auto;
   padding: 0px;
-  background-color: lightblue;
+  height: 600px;
+  width: 800px;
   overflow: hidden;
 }
 
 platform {
   position: absolute;
-  width: 400px;
+  width: 200px;
   height: 16px;
   background: linear-gradient(45deg, rgb(255, 153, 0) 12.5%, #fff 12.5%, #fff 37.5%, rgb(255, 153, 0) 37.5%, rgb(255, 153, 0) 62.5%, #fff 62.5%, #fff 87.5%, rgb(255, 153, 0) 87.5%);
   background-size: 32px 32px;
@@ -16,6 +24,15 @@ platform {
   border-radius: 8px;
 }
 
+
+#msg {
+  position:absolute;
+  left: 50%;
+  right:50%;
+  top: 30%;
+  margin: auto;
+  font-size: 3em;
+}
 
 .fragile {
   border: none;
