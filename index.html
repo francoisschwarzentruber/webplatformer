@@ -7,25 +7,73 @@
 </head>
 
 <body>
-    <div id=scene>
-        <win style="left: 50px; top: 134px" id="win"></win>
-        
+    <div id="videogame">
 
-        <platform class="grass" style="left: 100px; top: 550px"></platform>
-        <platform style="left: 400px; top: 550px"></platform>
-        <platform style="left: 650px; top: 300px; width: 100px" class="upDown"></platform>
 
-        <platform class="fragile" style="left: 500px; top: 300px; width: 100px"></platform>
-        <platform class="shrinkable" style="left: 300px; top: 300px; width: 100px"></platform>
+        <level style="background: linear-gradient(blue, white);">
+            <div style="color:white">Welcome!</div>
+            <win style="left: 700px; top: 480px"></win>
+            <platform class="grass" style="left: 100px; top: 350px; width:80px"></platform>
+            <platform class="grass" style="left: 100px; top: 550px; width:800px"></platform>
 
-        
-        <platform class="fragile" style="left: 150px; top: 250px; width: 100px"></platform>
-        <platform style="left: 0px; top: 200px; width: 100px"></platform>
-        
-        <sprite style="left: 200px; top: 500px" id="hero"></sprite>
+        </level>
 
-        <div id="msg"></div>
+        <level style="background-color: orange;">
+            <win style="left: 200px; top: 480px"></win>
+            <platform class="grass" style="left: 400px; top: 500px; width:80px"></platform>
+            <platform class="grass" style="left: 100px; top: 550px; width:300px"></platform>
+            <platform class="grass" style="left: 500px; top: 550px; width:300px"></platform>
+
+        </level>
+
+        <level style="background-color: lightblue;">
+            <win style="left: 50px; top: 134px"></win>
+
+            <platform class="grass" style="left: 100px; top: 550px"></platform>
+            <platform style="left: 400px; top: 550px"></platform>
+            <platform style="left: 650px; top: 300px; width: 100px" class="upDown"></platform>
+
+            <platform class="fragile" style="left: 500px; top: 300px; width: 100px"></platform>
+            <platform class="shrinkable" style="left: 300px; top: 300px; width: 100px"></platform>
+
+
+            <platform class="fragile" style="left: 150px; top: 250px; width: 100px"></platform>
+            <platform style="left: 0px; top: 200px; width: 100px"></platform>
+
+        </level>
+
+        <level style="background-color: brown;">
+            <win style="left: 600px; top: 480px"></win>
+            <platform  style="left: 100px; top: 250px; width:16px"></platform>
+            <platform style="left: 300px; top: 350px; width:16px"></platform>
+            <platform style="left: 400px; top: 400px; width:16px"></platform>
+            <platform class="grass" style="left: 500px; top: 550px; width:320px"></platform>
+
+        </level>
+
+
+
+        <level style="background-color: red;">
+            <win style="left: 200px; top: 480px"></win>
+            <platform class="blink" style="left: 200px; top: 450px; width:32px"></platform>
+            <platform class="blink" style="left: 300px; top: 450px; width:50px"></platform>
+            <platform class="blink2" style="left: 400px; top: 500px; width:80px"></platform>
+            <platform class="grass" style="left: 500px; top: 550px; width:320px"></platform>
+
+        </level>
+
+
+        <level style="background-color: orange;">
+            <div>Bravo!</div>
+            <platform class="grass" style="left: 100px; top: 350px; width:80px"></platform>
+            <platform class="grass" style="left: 100px; top: 550px; width:800px"></platform>
+
+        </level>
+        <sprite style="left: 500px; top: 500px" id="hero"></sprite>
+
     </div>
+
+    <div id="msg"></div>
 </body>
 
 </html>

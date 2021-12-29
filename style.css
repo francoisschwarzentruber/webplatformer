@@ -1,16 +1,31 @@
 body {
   margin: 0px;
   overflow: hidden;
-  background: radial-gradient(closest-side, rgb(69, 196, 255), lightblue);
+  background: grey;
+  position: absolute;
 }
 
-div {
-  position: relative;
+#videogame {
+  position: absolute;
+  overflow: hidden;
   margin: auto;
   padding: 0px;
   height: 600px;
   width: 800px;
+  left:50%;
 }
+
+
+
+#videogame level {
+  position:absolute;
+  min-height: 600px;
+  min-width: 800px;
+  left:0px;
+  top:0px;
+  width:0px;
+}
+
 
 platform {
   position: absolute;
@@ -28,22 +43,23 @@ platform {
   background-image: radial-gradient(circle, rgb(6, 85, 6) 50%, transparent 10%), radial-gradient(circle, rgb(6, 85, 6) 50%, transparent 10%);
   background-size: 10px 10px;
   background-position: 0 0, 50px 50px;
-  border:none;
+  border: none;
   border-top: rgb(6, 85, 6) 6px solid;
-  border-radius:16px;
+  border-radius: 16px;
 }
 
 
 
 #msg {
-  position:absolute;
+  position: absolute;
   left: 50%;
-  right:50%;
+  right: 50%;
   top: 30%;
   margin: auto;
   font-size: 3em;
+  color:grey;
 }
-  
+
 .fragile {
   border: none;
 }
@@ -54,7 +70,19 @@ platform {
 
 .shrinkable {
   animation: shrink 3s alternate-reverse infinite;
-} 
+}
+
+@keyframes blink {
+  to {opacity: 0}
+}
+
+.blink {
+  animation: blink 2s alternate-reverse infinite;
+}
+
+.blink2 {
+  animation: blink 2s alternate infinite;
+}
 
 #hero {
   position: absolute;
@@ -64,9 +92,9 @@ platform {
   border: black 2px solid;
 }
 
-#win {
+win {
   position: absolute;
-  background: linear-gradient(90deg, rgb(160, 97, 4) 40%,black, rgb(160, 97, 4) 60%);
+  background: linear-gradient(90deg, rgb(160, 97, 4) 40%, black, rgb(160, 97, 4) 60%);
   width: 32px;
   height: 64px;
   border-top-left-radius: 16px;
@@ -117,7 +145,7 @@ platform {
 
 @keyframes shrink {
   from {
-    transform:  scaleX(1);
+    transform: scaleX(1);
   }
 
   to {
